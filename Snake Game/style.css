@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;    
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(57, 86, 51);
+    color: white;
+}
+
+/* canvas{
+    transition:  1s ease-in-out; 
+} */
+
+#gameOverContainer{
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background: #000000e2;
+    color: white;
+    font-size: 2em;
+    display: none;
+
+}
