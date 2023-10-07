@@ -1,7 +1,7 @@
 // this is  the snake games
 const gameOverContainer = document.getElementById("gameOverContainer");
 const myCanvas = document.getElementById("myCanvas");
-// const restart = document.getElementById('restart');
+const restart = document.getElementById('restart');
 const context = myCanvas.getContext("2d");
 const blockSize = 25;
 const rows = 20;
@@ -55,6 +55,7 @@ function update() {
   // colision of food and snake
   if (snakeX == foodX && snakeY == foodY) {
     snackBody.push([foodX, foodY]);
+    eatingAudio.play(); // sound play
     placeFood();
   }
 
@@ -100,7 +101,7 @@ function update() {
 function placeFood() {
   // this function get the position of foot in random location
   // we use the random function to get the random numbers...
-  eatingAudio.play(); // sound play
+  
   foodX = Math.floor(Math.random() * cols) * blockSize;
   foodY = Math.floor(Math.random() * rows) * blockSize;
   score++;
@@ -126,3 +127,9 @@ function changeDirection(e) {
     velocityY = 0;
   }
 }
+
+
+// restart the game when user click the btn...
+restart.addEventListener('click' ,()=>{
+  location.reload();
+})
