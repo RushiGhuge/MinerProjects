@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: monospace;
+}
+
+canvas {
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+nav {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    border: 1px solid black;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.69);
+    color: white;
+    border-radius: 16px;
+    font-weight: 600;
+}
+
+.lineWidthSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+nav > input{
+    width: 30px;
+    padding: 0;
+}
+select{
+    padding: 5px; 
+    font-size: 1.1em;
+    outline: none;
+    background: rgba(0, 0, 0, 0.558);
+    color: white;
+    border: none;
+    border-radius: 16px;
+}
+.colorSelect{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
